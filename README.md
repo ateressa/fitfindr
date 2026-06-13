@@ -32,9 +32,9 @@ python app.py
 
 | Tool | Inputs | Outputs | Purpose |
 |---|---|---|---|
-| `search_listings` | `description: str`, `size: str | None`, `max_price: float | None` | `list[dict]` of matching listings | Filters the mock listings dataset and returns the best-ranked matches for the user's request. |
-| `suggest_outfit` | `new_item: dict`, `wardrobe: dict` | `str` outfit advice | Generates styling guidance for the selected listing using the user's wardrobe, or general styling advice if the wardrobe is empty. |
-| `create_fit_card` | `outfit: str`, `new_item: dict` | `str` caption | Converts the outfit suggestion into a short social caption that mentions the item, price, and platform. |
+| `search_listings` | `description: str`, `size: str &#124; None`, `max_price: float &#124; None` | `list[dict]` of matching listings | Filters the mock listings dataset and returns the best-ranked matches for the user's request. |
+| `suggest_outfit` | `new_item: dict`, `wardrobe: dict` | `str` outfit suggestion | Generates styling guidance for the selected listing using the user's wardrobe, or general styling advice if the wardrobe is empty. |
+| `create_fit_card` | `outfit: str`, `new_item: dict` | `str` fit-card caption | Converts the outfit suggestion into a short social-media-style caption that mentions the item, price, and platform. |
 
 ## Planning Loop
 
